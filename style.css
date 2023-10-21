@@ -45,7 +45,6 @@ margin: 0px 20px;
     padding: 8px 16px;
     font-size: medium;
 }
-/* Add a blackish overlay above the images */
 [class*=img-fluid] {
     position: relative;
     background-position: center; background-size: cover; background-repeat: no-repeat;
@@ -90,7 +89,6 @@ margin: 0px 20px;
 
 }
 
-/* Style for images within the container */
 [class*=img-fluid] img {
     max-width: 100%;
     height: auto;
@@ -98,7 +96,6 @@ margin: 0px 20px;
     margin: 0 auto;
 }
 
-/* Add overlay using ::after pseudo-element */
 [class*=img-fluid]::after {
     content: "";
     position: absolute;
@@ -106,7 +103,7 @@ margin: 0px 20px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.574); /* Adjust the color and opacity as needed */
+    background-color: rgba(0, 0, 0, 0.574); 
     z-index: 1;
 }
 
@@ -126,19 +123,19 @@ margin: 0px 20px;
 }
 
 .trustedBy {
-    display: flex; /* Display brand cards in a row */
-    justify-content: space-around; /* Space them equally */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
     flex-wrap: wrap;
-    overflow: hidden; /* Hide overflowing logos */
+    overflow: hidden; 
     white-space: nowrap; 
     white-space: nowrap
     
 }
 
-/* Style the individual brand cards */
+
 .brandCard {
-    width: 16%; /* Adjust the width as needed */
+    width: 16%; 
     text-align: center;
     padding: 10px 20px;
     background: #e2e2e2;
@@ -157,15 +154,15 @@ margin: 0px 20px;
     
     
     .trustedBy {
-        animation: scroll 10s linear infinite; /* Animation for scrolling */
-        width: 100%; /* Make it full width for the slider */
+        animation: scroll 10s linear infinite; 
+        width: 100%; 
     }
     
     .brandCard {
         flex-wrap: nowrap;
         padding: 6px 12px;
-        width: 30%; /* Adjust the width for smaller screens */
-        margin: 3px 5px; /* Adjust spacing between logos */
+        width: 30%; 
+        margin: 3px 5px; 
     }
     
     @keyframes scroll {
@@ -183,7 +180,7 @@ margin: 0px 20px;
     .brandCard {
         width: 35%; 
         padding: 2px 4px;
-        /* Adjust the width for smaller screens */
+        
     }
 }
 
