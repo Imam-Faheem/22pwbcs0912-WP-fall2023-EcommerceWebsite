@@ -1,0 +1,249 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+
+@media screen and (max-width:767px){
+    
+    
+    .navbar-brand{
+width: 100%;
+display: flex;
+}
+
+
+
+.navbar-brand img{
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#searchBarAndIcons{
+    width: 100%;
+    justify-content: space-between;
+}
+
+}
+
+.nav-item{
+letter-spacing: 1px;
+margin: 0px 20px;
+}
+
+.carousel-inner{
+    height: 75vmin;
+    
+    
+}
+.carousel-caption{
+    bottom: 50%;
+}
+.carousel-caption .btn{
+    padding: 8px 16px;
+    font-size: medium;
+}
+/* Add a blackish overlay above the images */
+[class*=img-fluid] {
+    position: relative;
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+@media screen and (max-width:580px){
+    
+        [class*=img-fluid]:first-child {
+            display: none;
+        }
+        .carousel-caption{
+            bottom: 57%;
+        }
+        .carousel-caption h5{
+            font-size: 2em;
+        }
+        .carousel-caption .btn{
+            padding: 3px 6px;
+            font-size: xx-small;
+        }
+        
+   
+}
+    
+@media screen and (max-width:440px){
+    
+   
+    .carousel-caption{
+        bottom: 70%;
+    }
+    .carousel-caption h5{
+        font-size: 1.2em;
+    }
+    .carousel-caption p{
+        font-size: 0.6em;
+    }
+   
+    
+
+
+}
+
+/* Style for images within the container */
+[class*=img-fluid] img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add overlay using ::after pseudo-element */
+[class*=img-fluid]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.574); /* Adjust the color and opacity as needed */
+    z-index: 1;
+}
+
+
+
+.welcomeSection{
+    width: 50%;
+}
+
+@media screen and (max-width:900px){
+    
+.welcomeSection{
+    width: 100%;
+
+}
+
+}
+
+.trustedBy {
+    display: flex; /* Display brand cards in a row */
+    justify-content: space-around; /* Space them equally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap;
+    overflow: hidden; /* Hide overflowing logos */
+    white-space: nowrap; 
+    white-space: nowrap
+    
+}
+
+/* Style the individual brand cards */
+.brandCard {
+    width: 16%; /* Adjust the width as needed */
+    text-align: center;
+    padding: 10px 20px;
+    background: #e2e2e2;
+    overflow: hidden;
+
+
+}
+.brandCard img {
+    max-width: 70%; 
+    margin: 0 auto;
+    min-height: 2%; 
+
+    
+}
+@media screen and (max-width:900px){
+    
+    
+    .trustedBy {
+        animation: scroll 10s linear infinite; /* Animation for scrolling */
+        width: 100%; /* Make it full width for the slider */
+    }
+    
+    .brandCard {
+        flex-wrap: nowrap;
+        padding: 6px 12px;
+        width: 30%; /* Adjust the width for smaller screens */
+        margin: 3px 5px; /* Adjust spacing between logos */
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }}
+}    
+
+@media screen and (max-width:500px){
+    
+   
+    .brandCard {
+        width: 35%; 
+        padding: 2px 4px;
+        /* Adjust the width for smaller screens */
+    }
+}
+
+
+@media screen and (max-width:992px){
+    
+   
+    #getinTouch{
+        order: 1;
+    }
+    #contactForm{
+        order: 2;
+    }
+}
+
+ .col-sm-12 {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+   .col-sm-12:hover {
+    transform: scale(1.01);
+  }
+  
+  
+  .card{
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+  }
+  .card:hover{
+    box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .card img{
+    transition: 0.4s ease-in-out;
+  }
+  .card img:hover{
+    transform: scale(1.09);
+    filter: brightness(1.08);
+    
+
+  }
+
+  #buttton{
+    color: white;
+    background-color: #63b0a6;
+    transition: 0.2s ease-in;
+  }
+
+  #buttton:hover{
+    background-color: #3dab9c;
+    transform: scale(1.02);
+  }
+
+  .brandTextColor{
+    color: #63b0a6;
+  }
+
+  .brandFont{
+    font-family: 'GLITTEN ALL CAPS',system-ui,'-apple-system',"Segoe UI",'Roboto',"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
