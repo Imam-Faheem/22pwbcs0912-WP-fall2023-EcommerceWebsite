@@ -240,6 +240,12 @@ margin: 0px 20px;
   .brandTextColor{
     color: #63b0a6;
   }
+ .nav-link{
+    color: #ffffff;
+      }
+  .nav-link:hover{
+color: #008270;
+  }
 
   .brandFont{
     font-family: 'GLITTEN ALL CAPS',system-ui,'-apple-system',"Segoe UI",'Roboto',"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
