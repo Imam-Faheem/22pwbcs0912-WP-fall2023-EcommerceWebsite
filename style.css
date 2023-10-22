@@ -34,12 +34,12 @@ margin: 0px 20px;
 }
 
 .carousel-inner{
-    height: 75vmin;
+    height: 75vh;
     
     
 }
 .carousel-caption{
-    bottom: 50%;
+    top: 20%;
 }
 .carousel-caption .btn{
     padding: 8px 16px;
@@ -58,7 +58,7 @@ margin: 0px 20px;
             display: none;
         }
         .carousel-caption{
-            bottom: 57%;
+            top: 20%;
         }
         .carousel-caption h5{
             font-size: 2em;
@@ -75,7 +75,7 @@ margin: 0px 20px;
     
    
     .carousel-caption{
-        bottom: 70%;
+        top: 25%;
     }
     .carousel-caption h5{
         font-size: 1.2em;
